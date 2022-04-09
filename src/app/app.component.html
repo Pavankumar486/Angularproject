@@ -1,0 +1,52 @@
+
+<html>
+<head>  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: dodgerblue
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 21px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: gray;
+}
+h3{
+ color: white;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><img src="\assets\icon1.png" height="50px" width="50px"/></li>
+  <li><h3>Customer Manager</h3></li>
+  <li><a routerLink="/customer">Customers</a></li>
+  <li><a routerLink="/orders">Orders</a></li>
+  <li><a routerLink="/about">About</a></li>
+  <li><a routerLink="/login">Login</a></li>
+</ul>
+
+</body>
+</html>
+
+<router-outlet></router-outlet>

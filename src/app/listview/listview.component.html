@@ -1,0 +1,139 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h3{
+ color: white;
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+.search-container {
+  float: right;
+}
+.search-container button {
+  float: right;
+  padding: 1px 5px;
+  margin-top: 0px;
+  margin-right: 20px;
+  background: #ddd;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: 5%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color:rgb(169, 169, 169);
+}
+
+</style>
+</head>
+<body>
+  <h2><img src="/assets/icon2.png" height="80px" width="80px"/>Customers</h2>
+  <br>
+  <br>
+  <div id="btnContainer">
+      <button class="btn active"  routerLink="/cardview" style="margin:5px;"><i class="fa fa-th-large"></i> Grid View</button> 
+      <button class="btn active"  routerLink="/listview" style="margin:5px;"><i class="fa fa-bars"></i> List View</button> 
+      <button class="btn active"  routerLink="/mapview" style="margin:5px;"><i class="fa fa-map"></i> Map View</button>
+      <button class="btn active"  routerLink="" style="margin:5px;"><i class="fa fa-plus"></i>New Customer</button>
+      <div class="search-container">
+      <form action="/action_page.php">
+          Filter:
+          <br>
+        <input type="text" placeholder="Search Text" name="search">
+        <button type="submit" routerLink="/cardview"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+    </div>
+    <br>
+    <table>
+      <tr>
+        <th></th>
+        <th>First Name</th>
+        <th>Last Name</th>		
+        <th>Address</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Order Total</th>
+        <th></th>
+      </tr>
+      
+      <tr>
+        <td> <img src="/assets/icon3.png"  height="40px"  id="nav" alt="admin" align="left" /></td>
+        <td><a routerLink="/editcustomer">Ted</a></td>
+        <td>James</td>
+        <td>1234 Anywhere St.</td>
+        <td>Phoenix</td>
+        <td>Arizona</td>
+        <td>$207.98</td>
+        <td><a routerLink="/orders">View Orders</a></td>
+      </tr>
+      
+      <tr>
+        <td> <img src="/assets/icon4.png"  height="40px"  id="nav" alt="admin" align="left" /></td>
+        <td><a routerLink="">Michelle</a></td>
+        <td>Thompson</td>
+        <td>345 Cedar Point Ave.</td>
+        <td>Encinitas</td>
+        <td>California</td>
+        <td>$8.98</td>
+        <td><a routerLink="/orders">View Orders</a></td>
+      </tr>
+      
+      <tr>
+        <td> <img src="/assets/icon3.png"  height="40px"  id="nav" alt="admin" align="left" /></td>
+        <td><a routerLink="">Zed</a></td>
+        <td>Bishop</td>
+        <td>1822 Long Bay Dr.</td>
+        <td>Seattle</td>
+        <td>Washington</td>
+        <td>$229.97</td>
+        <td><a routerLink="">View Orders</a></td>
+      </tr>
+
+      <tr>
+        <td> <img src="/assets/icon4.png"  height="40px"  id="nav" alt="admin" align="left" /></td>
+        <td><a routerLink="">Clar</a></td>
+        <td>Anderson</td>
+        <td>350 Cedar Point Ave.</td>
+        <td>Encinitas</td>
+        <td>California</td>
+        <td>$10.98</td>
+        <td><a routerLink="">View Orders</a></td>
+      </tr>
+
+      <tr>
+        <td> <img src="/assets/icon3.png"  height="40px"  id="nav" alt="admin" align="left" /></td>
+        <td><a routerLink="">Smith</a></td>
+        <td>Clark</td>
+        <td>1846 Long Bay Dr.</td>
+        <td>Seattle</td>
+        <td>Washington</td>
+        <td>$500.97</td>
+        <td><a routerLink="">View Orders</a></td>
+      </tr>
+    
+    
+    </table>
+  
+</body>
+</html>

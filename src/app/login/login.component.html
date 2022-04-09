@@ -1,0 +1,56 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+h3{
+ color: white;
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: block;
+  border: none;
+  background: #f1f1f1;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+</style>
+</head>
+<body>
+
+<br>
+<h2><img src="assets/icon5.png" height="50px" width="50px"/>  Login</h2>
+<br>
+<hr>
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()"  form class="form-inline" action="/action_page.php">
+    Email : <input type="text" name="username" id="uname" formControlName="username" class="form-control" > 
+    <br>
+    <br>
+    Password :  <input type="password" id="psw" name="psw" formControlName="password" class="form-control">
+    
+    <br>
+    <br>
+    <button  type="submit" class="button" >Login</button>
+  </form>
+
+</body>
+</html>
